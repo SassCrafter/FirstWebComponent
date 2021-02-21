@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tooltip</title>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		html {
+			--tooltip-text-bg: rgba(130, 100, 25, 0.8);
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+		}
+	</style>
+
+	<script src="tooltip.js" defer></script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet consectetur 
+		<sc-tooltip>
+			<span slot="open-icon" class="tooltip-icon">
+				<i class="fas fa-exclamation"></i>
+			</span>
+			<span slot='close-icon' class="tooltip-icon">
+				<i class="fas fa-times"></i>
+			</span>
+			<span slot='text'>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. A, velit!</span>
+		</sc-tooltip> 
+	adipisicing elit. Illo debitis odio illum nesciunt molestias ipsum?</p>
+</body>
+</html>
